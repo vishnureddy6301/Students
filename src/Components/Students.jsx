@@ -12,7 +12,7 @@ const Students = () => {
             
         ];
         setStudentsData(Data);
- },[] );
+ },[] );  
  const studentsWithHighMarksAndGradeA = studentsData.filter(
     (student) => student.marks > 90 && student.grade === "A"
   );
