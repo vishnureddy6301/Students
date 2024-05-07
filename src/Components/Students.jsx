@@ -23,8 +23,8 @@ const Students = () => {
     (student) => student.marks >= 50 && student.marks <= 90 && student.grade === "B"
   );
   const totalMarks = studentsData.reduce((emp, student) => emp + student.marks, 0);
-  //const sortedStudents = studentsData.sort((a, b) => a.marks - b.marks);
-  const sortedStudents = studentsData.sort((a, b) => b.marks - a.marks);
+  const sortedStudents = studentsData.sort((a, b) => a.marks - b.marks);
+  //const sortedStudents = studentsData.sort((a, b) => b.marks - a.marks);
   const studentsWithoutFGrade = studentsData.filter((student) => student.grade !== "F");
 
 
